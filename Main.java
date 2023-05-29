@@ -37,6 +37,8 @@ public class Main {
     }
 }
 
+
+
 // TASK2
 public class Box {
     private double width;
