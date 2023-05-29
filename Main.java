@@ -74,3 +74,23 @@ public class Box {
         mybox3.type();
     }
 }
+
+
+// TASK6
+public class Main {
+    public static void main(String[] args) {
+        int indexMax = 0;
+        int index = 0;
+        int wordLength = 0;
+        String str = " dddddddddddddddddddddddddddddddddd  dfdf sfagdfgg gggg gfghb ddd gfhdhdjgadfgsdf dfgshggfgfgfgfgfgfgfgf fhhhjpihcbs   ";
+        String[] words = str.split(" ");
+        for (String word : words) {
+            if (word.length() > wordLength) {
+                wordLength = word.length();
+                indexMax = index;
+            }
+            index++;
+        }
+        System.out.println(words[indexMax]);
+    }
+}
