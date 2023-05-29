@@ -76,6 +76,29 @@ public class Box {
 }
 
 
+// TASK5
+public class Main {
+    public static void main(String[] args) {
+        int count = 0;
+        int countWord = 0;
+        String str = "ccc   ccc lovccce   Jccccavacccc ccc  ";
+        String[] words = str.split(" ");
+        for (String word : words) {
+            for (int i = 0; i < word.length(); i++) {
+                if (word.charAt(i) == 'c') {
+                    count++;
+                }
+            }
+            if (count >= 3) {
+                countWord++;
+            }
+            count = 0;
+        }
+        System.out.println(countWord);
+    }
+}
+
+
 // TASK6
 public class Main {
     public static void main(String[] args) {
