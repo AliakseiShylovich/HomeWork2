@@ -94,3 +94,19 @@ public class Main {
         System.out.println(words[indexMax]);
     }
 }
+
+
+TASK7
+public class Main {
+    public static void main(String[] args) {
+        String text = "aДомашняяa aработa aквантовые aaa основы aчеловеческогоa сознания anaconda ";
+        String[] words = text.split(" ");
+        for (String word : words) {
+            if (word.charAt(0) == 'a') {
+                if (word.charAt(word.length() - 1) == 'a') {
+                    System.out.println(word);
+                }
+            }
+        }
+    }
+}
